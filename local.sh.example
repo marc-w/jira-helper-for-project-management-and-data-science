@@ -1,0 +1,33 @@
+#!/usr/bin/env sh
+
+# Environment Variables for Jira Helper by Marc-W.com
+
+# Empty quote '' should be interperted as not set.
+
+# JIRA CREDENTIALS
+
+# Try here: https://id.atlassian.com/manage-profile/security/api-tokens
+export JIRA_API_TOKEN=''
+
+# email associated with the user/token
+export JIRA_EMAIL=''
+
+# use all of the basic URL >>https://THIS_VALUE.atlassian.net/<<
+export JIRA_SERVER=''
+
+# Skip set up and use this project id
+# uncomment and set with project ID
+export JIRA_PROJECT_ID=""
+
+# SLACK (optional)
+export SLACK_WEBHOOK_URL='webhook_missing'
+
+# OTHER CONFIG
+
+# GLobal, env accesible debugging.  Boolean where 1 = debugging on
+export DEBUG=1
+
+clear;
+printf "* * * * * * * * * * * * * * * * * *\n"
+printf "Environment variables are hydrated.\n"
+printf "* * * * * * * * * * * * * * * * * *\n"
