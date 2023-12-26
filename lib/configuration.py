@@ -20,7 +20,8 @@ else:
 @dataclass
 class Konfig:
     """
-    Handles all of the config, hydration, and validation of credentials and set up
+    Handles all of the config, hydration, and validation
+    of credentials and set up
     """
     # Jira
     JIRA_SERVER = environ.get('JIRA_SERVER')
@@ -77,5 +78,6 @@ class Konfig:
             sys.exit("Graceful exit, see logs for errors found.")
 
         return True
+
 
 lazy_config = Konfig()

@@ -26,7 +26,9 @@ class Setup:
         :return: None
         """
         if config.JIRA_PROJECT_ID:
-            config.logger.info("JIRA_PROJECT_ID set to %s", config.JIRA_PROJECT_ID)
+            config.logger.info(
+                "JIRA_PROJECT_ID set to %s", config.JIRA_PROJECT_ID
+            )
             config.logger.info("Setup will not run.")
             return
 
@@ -60,10 +62,11 @@ class Setup:
 
     def get_all_projects(self):
         """
-        Get all of the projects visible to the user associated with the API token
+        Get all of the projects visible to the user
+        associated with the API token
 
-        :return _type_: list 
-        
+        :return _type_: list
+
         ex. [<JIRA Project: key='MP', name='Main Project', id='10001'>, ...]
         """
         # Check for projects
@@ -118,7 +121,7 @@ class Setup:
         print("* " * 20)
         print(" ")
 
-        for k,v in transitions.items():
+        for k, v in transitions.items():
             print(f"ID: {k} -- string name: {v}")
 
     def get_selected_project(self, keys):

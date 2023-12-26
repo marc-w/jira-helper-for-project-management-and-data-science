@@ -42,3 +42,17 @@ from lib import config
 ```
 
 The class `Konfig` located in `lib/configuration` can be extended as needed to for non-environment variable use.  Note the use of `lazy-config`.
+
+
+## Using Jupyter
+
+To start Jupyter, use the following command:
+
+```
+jupyter notebook
+```
+
+
+## Dependencies
+
+* Flake8: Final linting.
