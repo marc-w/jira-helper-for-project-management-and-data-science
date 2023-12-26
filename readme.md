@@ -56,3 +56,7 @@ jupyter notebook
 ## Dependencies
 
 * Flake8: Final linting.
+
+```
+flake8 lib main.py
+```
